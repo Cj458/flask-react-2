@@ -5,10 +5,7 @@ import Main from './Main';
 import Sidebar from './Sidebar';
 
 function App() {
-  const[notes, setNotes] = useState([],
-
-   localStorage.notes ? JSON.parse(localStorage.notes) : []
-  );
+  const[notes, setNotes] = useState(localStorage.notes ? JSON.parse(localStorage.notes) : []);
   
   const [activeNote, setActiveNote] = useState(false);
 
